@@ -1,0 +1,31 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    List<ChartData> Data = new List<ChartData>()
+    {
+     new ChartData { Browser= "Chrome", Users= 59.28 },
+     new ChartData { Browser= "UC Browser", Users= 4.37 },
+     new ChartData { Browser= "Internet Explorer", Users= 6.12 },
+     new ChartData { Browser= "Sogou Explorer", Users= 1.73 },
+     new ChartData { Browser= "QQ", Users= 3.96 },
+     new ChartData { Browser= "Safari", Users= 4.73 },
+     new ChartData { Browser= "Opera", Users= 3.12 },
+     new ChartData { Browser= "Edge", Users= 7.48 },
+     new ChartData { Browser= "Others", Users= 9.57 }
+    };
+}
+
+<ejs-accumulationchart id="chart" title="Browser Market Share">
+    <e-accumulationchart-tooltipsettings enable=true>
+    </e-accumulationchart-tooltipsettings>
+    <e-accumulation-series-collection>
+        <e-accumulation-series type="Pyramid"
+                               dataSource="Data"
+                               xName="Browser"
+                               yName="Users">
+                               <e-accumulationseries-datalabel visible=true>
+                               </e-accumulationseries-datalabel>
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>
