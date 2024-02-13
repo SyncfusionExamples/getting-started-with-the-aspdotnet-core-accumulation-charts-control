@@ -16,4 +16,4 @@ Make sure that you have the compatible versions of Visual Studio 2022 and .NET 8
 
 ### How to run this application?
 
-To run this application, you need to clone the `getting-started-with-the-aspdotnet-core--accumulation-charts-control` repository and then press the `F5` key to run the application.
+To run this application, you need to clone the `getting-started-with-the-aspdotnet-core-accumulation-charts-control` repository and then press the `F5` key to run the application.
